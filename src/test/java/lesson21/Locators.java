@@ -1,4 +1,4 @@
-package lesson19.chromedriver;
+package lesson21;
 
 public class Locators {
 
