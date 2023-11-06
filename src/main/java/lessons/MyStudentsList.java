@@ -10,25 +10,17 @@ public class MyStudentsList {
 //                "Artem Avanian",
 //                "Ihor Kulyomza",
 //                "Kateryna Artiushenko",
-//                "Kateryna Cheliadina",
+                "Kateryna Cheliadina",
 //                "Konstantyn Hutsaliuk",
-                "Maksym Styosov",
+//                "Maksym Styosov",
 //                "Mykhailo Volchanov",
                 "Nikita Vengrin"
+//                "Valentina Odnolko"
         );
         System.out.println(students.get(new Random().nextInt(students.size())));
-
-        String name = "Alex";
-        name.toUpperCase();
-        name = "Anna".trim();
-        System.out.println(name);
-
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Alex");
-        stringBuilder.append(" 34 yeasr");
-
-        //Написать программу, которая будет заменять все четные элементы массива на Y и выводить результат в консоль!
-        //Массив от 1 до 10!
-
+        int[] arr = {2,2,5,6,7};
+        int size = arr.length;
     }
 }
+
+
