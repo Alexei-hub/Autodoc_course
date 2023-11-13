@@ -1,0 +1,5 @@
+Css
+лого - .logo
+
+xpath
+лого //div[@class='logo']
