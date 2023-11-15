@@ -34,6 +34,8 @@ public class WebDriverInit {
 
         //Запускает браузер в режиме без графического интерфейса (headless mode).
         options.addArguments("--headless");
+
+        options.addArguments("--start-maximized");
         driver = new ChromeDriver(options);
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
