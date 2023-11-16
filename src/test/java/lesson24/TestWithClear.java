@@ -1,13 +1,13 @@
 package lesson24;
 
-import init.WebDriverInit;
+import init.InitialWebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import static java.lang.Thread.sleep;
 
-public class TestWithClear extends WebDriverInit {
+public class TestWithClear extends InitialWebDriver {
 
     @Test
     public void testClear() throws InterruptedException {

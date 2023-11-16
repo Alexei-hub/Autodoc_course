@@ -1,6 +1,6 @@
 package lesson23;
 
-import init.WebDriverInit;
+import init.InitialWebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.testng.Assert.fail;
 
-public class TestIsExistInDom extends WebDriverInit {
+public class TestIsExistInDom extends InitialWebDriver {
 
     final String EXPECTED_LABEL_COLOR = "rgba(0, 160, 70, 1)";
 

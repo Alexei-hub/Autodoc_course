@@ -1,12 +1,12 @@
 package lesson24;
 
-import init.WebDriverInit;
+import init.InitialWebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestWithSubmit extends WebDriverInit {
+public class TestWithSubmit extends InitialWebDriver {
 //    Открыть https://www.google.com.ua/
 //    Ввести в поисковый инпут QA
 //    Проверить условие: Если значение кнопки соответствует «Поиск в Google»,

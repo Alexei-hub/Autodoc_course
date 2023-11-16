@@ -1,6 +1,6 @@
 package lesson24;
 
-import init.WebDriverInit;
+import init.InitialWebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TestFindElements extends WebDriverInit {
+public class TestFindElements extends InitialWebDriver {
 //    Перейти на сайт https://rozetka.com.ua/
 //    Перейти в категорию Ноутбуки и компьютеры
 //    Перейти в подкатегорию Ноутбуки
@@ -35,6 +35,5 @@ public class TestFindElements extends WebDriverInit {
         }
 
         Assert.assertEquals(listOfTittles.size(), 60, "Elements size on page doesn't equals 60");
-
     }
 }
