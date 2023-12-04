@@ -18,6 +18,7 @@ public class FirstPageFactoryTest extends InitialWebDriver {
                 .clickOnProductTittleByIndex(0)
                 .getTittleText();
         Assert.assertEquals(actualTittle, EXPECTED_TITTLE);
+
     }
 
 }

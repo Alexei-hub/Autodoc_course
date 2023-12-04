@@ -2,17 +2,12 @@ package pattern.pagebject.selenium;
 
 import org.openqa.selenium.WebDriver;
 
-public class MainPage extends MainPageLocators implements ICartPage {
+public class MainPage extends MainPageLocators {
 
     private WebDriver driver;
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
-    }
-
-    public MainPage checkingCart(){
-        checkingCartI(driver);
-        return this;
     }
 
     public MainPage typeTextInInputSearch(String text) {

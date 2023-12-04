@@ -1,22 +1,34 @@
-import java.util.Arrays;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import static java.lang.Thread.sleep;
 
 public class ForTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void openTab() throws InterruptedException {
+        WebDriver driver  = new ChromeDriver();
+        driver.get("https://www.google.com.ua/");
+        sleep(5000);
+        driver.switchTo().newWindow(WindowType.TAB);
+        sleep(5000);
 
-        int[] array = {1, 2, 3, 4, 5, 6};
-        System.out.println(Arrays.toString(changeArrays(array, 55)));
+        driver.switchTo().newWindow(WindowType.WINDOW);
+        sleep(5000);
+        Set<String> handles = driver.getWindowHandles();
+        System.out.println(handles.size());
 
-    }
+        List<String> test = new ArrayList<>(handles);
+        driver.switchTo().window(test.get(0));
+        sleep(5000);
 
-    public static int[] changeArrays(int[] arr, int num) {
-        int[] newArr = new int[arr.length + 1];
-        for (int i = 0; i < arr.length; i++) {
-            newArr[i] = arr[i];
-        }
-        newArr[arr.length] = num;
-
-        return newArr;
+        driver.quit();
     }
 }
 
