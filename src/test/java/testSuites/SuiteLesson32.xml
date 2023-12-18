@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteLesson32" >
+
+    <listeners>
+        <listener class-name="listeners.ProjectListener"/>
+    </listeners>
+
+    <test name="First Test For Surefire Plugin">
+        <classes>
+            <class name="lesson32.TestForMvnSureFIre"/>
+        </classes>
+    </test>
+
+    <test name="Second Test For Surefire Plugin FAIL">
+        <classes>
+            <class name="lesson32.TestForMvnSureFIreFail"/>
+        </classes>
+    </test>
+
+</suite>

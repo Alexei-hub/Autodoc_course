@@ -19,6 +19,7 @@ public class Launcher {
         Stream<Car> carStream = carList.stream()
                 .filter(x-> x.getYear() > 2012)
                 .filter(x -> !"BMW".equalsIgnoreCase(x.getModel()));
+
         carStream.forEach(x-> System.out.println(x.getModel()));
     }
 
